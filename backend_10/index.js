@@ -26,7 +26,7 @@ async function run() {
     const servicesCollection = database.collection("services");
     const ordersCollection = database.collection("orders");
 
-    // ====== SERVICES 
+    // SERVICES 
     app.post("/services", async (req, res) => {
       const data = req.body;
       const serviceWithStatus = {
