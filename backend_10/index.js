@@ -124,7 +124,7 @@ async function run() {
 
         const orderResult = await ordersCollection.insertOne(orderWithMeta);
 
-        // Update car status to unavailable
+        // Update car status  to unavailable
         await servicesCollection.updateOne(
           { _id: new ObjectId(orderData.carId) },
           { $set: { status: "unavailable" } }
@@ -140,7 +140,7 @@ async function run() {
       }
     });
 
-    // Get all booked cars 
+    // Get all booked cars
     app.get("/booked-cars", async (req, res) => {
       try {
         const activeOrders = await ordersCollection
