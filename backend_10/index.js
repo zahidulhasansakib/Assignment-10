@@ -140,7 +140,7 @@ async function run() {
       }
     });
 
-    // Get ALL booked cars 
+    // Get all booked cars 
     app.get("/booked-cars", async (req, res) => {
       try {
         const activeOrders = await ordersCollection
