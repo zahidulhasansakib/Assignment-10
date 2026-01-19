@@ -222,7 +222,7 @@ async function run() {
 
     console.log("MongoDB connected successfully!");
   } finally {
-    // client.close() if needed
+    
   }
 }
 
