@@ -160,7 +160,7 @@ async function run() {
       }
     });
 
-    // Get orders for SPECIFIC USER (My Orders page)
+    // Get orders for SPECIFIC USER   (My Orders page)
     app.get("/orders/:email", async (req, res) => {
       try {
         const { email } = req.params;
